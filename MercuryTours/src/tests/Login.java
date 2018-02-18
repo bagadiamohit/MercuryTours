@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,6 +20,8 @@ public class Login {
 		System.out.println("Executing the test");
 		LoginPageFactory loginPage = new LoginPageFactory(driver);
 		loginPage.login(userName, password);
+		Assert.assertTrue(loginPage.confirmation().contains("Flight"));
+		System.out.println("The confirmation message is: "+loginPage.confirmation());
 	}
 	
 	@BeforeMethod
