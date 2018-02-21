@@ -32,6 +32,7 @@ public class MercuryBookAFlight {
 	
 	@Test(priority=1)
 	public void flightFinder() {
+		Reporter.log("Browser is opened and website is launched");
 		System.out.println("Finding the flight");
 		FlightFinderPageFactory flightFinder = new FlightFinderPageFactory(driver);
 		flightFinder.flighFinder(tripType, passCount, departFrom, fromMonth, fromDay, departTo, toMonth, toDay, serviceClass, airline);
