@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
+    <line>
+      <![CDATA[Browser is opened and website is launched]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32106" started-at="2018-02-21T09:28:28Z" finished-at="2018-02-21T09:29:00Z">
+  <suite name="Default suite" duration-ms="26056" started-at="2018-02-21T14:35:43Z" finished-at="2018-02-21T14:36:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32106" started-at="2018-02-21T09:28:28Z" finished-at="2018-02-21T09:29:00Z">
-      <class name="tests.FlightFinder">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.FlightFinder@17e1b0c]" name="setUp" is-config="true" duration-ms="27583" started-at="2018-02-21T14:58:28Z" finished-at="2018-02-21T14:58:56Z">
+    <test name="Default test" duration-ms="26056" started-at="2018-02-21T14:35:43Z" finished-at="2018-02-21T14:36:09Z">
+      <class name="tests.MercuryBookAFlight">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlight@77ab81]" name="setUp" is-config="true" duration-ms="9046" started-at="2018-02-21T20:05:43Z" finished-at="2018-02-21T20:05:52Z">
           <reporter-output>
+            <line>
+              <![CDATA[Browser is opened and website is launched]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="flightFinderTest()[pri:0, instance:tests.FlightFinder@17e1b0c]" name="flightFinderTest" duration-ms="3285" started-at="2018-02-21T14:58:56Z" finished-at="2018-02-21T14:58:59Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.MercuryBookAFlight@77ab81]" name="login" duration-ms="4433" started-at="2018-02-21T20:05:52Z" finished-at="2018-02-21T20:05:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flightFinderTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.FlightFinder@17e1b0c]" name="tearDown" is-config="true" duration-ms="1178" started-at="2018-02-21T14:58:59Z" finished-at="2018-02-21T14:59:00Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="flightFinder()[pri:1, instance:tests.MercuryBookAFlight@77ab81]" name="flightFinder" duration-ms="4568" started-at="2018-02-21T20:05:57Z" finished-at="2018-02-21T20:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightFinder -->
+        <test-method status="PASS" signature="selectFlight()[pri:2, instance:tests.MercuryBookAFlight@77ab81]" name="selectFlight" duration-ms="1870" started-at="2018-02-21T20:06:01Z" finished-at="2018-02-21T20:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFlight -->
+        <test-method status="PASS" signature="bookFlight()[pri:3, instance:tests.MercuryBookAFlight@77ab81]" name="bookFlight" duration-ms="4734" started-at="2018-02-21T20:06:03Z" finished-at="2018-02-21T20:06:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlight@77ab81]" name="tearDown" is-config="true" duration-ms="1353" started-at="2018-02-21T20:06:08Z" finished-at="2018-02-21T20:06:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.FlightFinder -->
+      </class> <!-- tests.MercuryBookAFlight -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
