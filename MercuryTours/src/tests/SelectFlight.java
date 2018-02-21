@@ -8,24 +8,21 @@ import org.testng.annotations.Test;
 
 import pages.FlightFinderPageFactory;
 import pages.LoginPageFactory;
+import pages.SelectFlightPageFactory;
 
-public class FlightFinder {
-	
+public class SelectFlight {
 	WebDriver driver;
 	String webURL = "http://newtours.demoaut.com/";
-	String userName="mohit", password="mohit",browserType = "chrome", tripType="round trip", 
-			departFrom="New York",fromMonth="3",fromDay="19",departTo="Paris",toMonth="3",toDay="25",
-			serviceClass="business";
-	public int passCount=0;
-	int airline=2;
+	String userName="mohit", password="mohit",browserType = "chrome", tripType="round trip",  
+		departFrom="New York",fromMonth="3",fromDay="19",departTo="Paris",toMonth="3",toDay="25",serviceClass="business";
+	int passCount=2, airline=2;
 	
 	@Test
-	public void flightFinderTest() {
+	public void selectFlightTest() {
 		System.out.println("Executing the test");
-		FlightFinderPageFactory flightFinder = new FlightFinderPageFactory(driver);
-		flightFinder.flighFinder(tripType, passCount, departFrom, fromMonth, fromDay, departTo, toMonth, toDay, serviceClass, airline);
-		Assert.assertTrue(flightFinder.pageTitle().contains("Select a Flight"));
-		System.out.println("The title of the page is: "+flightFinder.pageTitle());
+		SelectFlightPageFactory selectFlight = new SelectFlightPageFactory(driver);
+		selectFlight.selectFlight();
+		Assert.assertTrue(selectFlight.confirmation().contains("Book a Flight"));
 	}
 	
 	@BeforeMethod
@@ -37,6 +34,10 @@ public class FlightFinder {
 		loginPage.login(userName, password);
 		Assert.assertTrue(loginPage.confirmation().contains("Flight"));
 		System.out.println("The confirmation message is: "+loginPage.confirmation());
+		FlightFinderPageFactory flightFinder = new FlightFinderPageFactory(driver);
+		flightFinder.flighFinder(tripType, passCount, departFrom, fromMonth, fromDay, departTo, toMonth, toDay, serviceClass, airline);
+		Assert.assertTrue(flightFinder.pageTitle().contains("Select a Flight"));
+		System.out.println("The title of the page is: "+flightFinder.pageTitle());
 	}
 	
 	@AfterMethod
@@ -44,5 +45,4 @@ public class FlightFinder {
 		System.out.println("Closing the test");
 		driver.quit();
 	}
-
 }

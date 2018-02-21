@@ -46,14 +46,17 @@ public class FlightFinderPageFactory {
 	@FindBy(css="input[name='servClass'][value='First']")
 	WebElement firstRadio;
 	
+	@FindBy (css="select[name='airline']")
+	WebElement airlineSelect;
+	
 	@FindBy(css="input[type='image'][src='/images/forms/continue.gif']")
 	WebElement continueButton;
 	
 	public void setTripType(String tripType) {
-		if (tripType.equalsIgnoreCase("roundtrip")){
+		if (tripType.equalsIgnoreCase("round trip")){
 			roundTripRadio.click();
 		}
-		else if(tripType.equalsIgnoreCase("oneway")) {
+		else if(tripType.equalsIgnoreCase("one way")) {
 			oneWayRadio.click();
 		}
 		else {
@@ -61,8 +64,8 @@ public class FlightFinderPageFactory {
 		}
 	}
 	
-	public void setPassCount(String passCount) {
-		new Select(passCountSelect).selectByValue(passCount);
+	public void setPassCount(int passCount) {
+		new Select(passCountSelect).selectByIndex(passCount);
 	}
 	
 	public void departFromCity(String departFrom) {
@@ -101,6 +104,10 @@ public class FlightFinderPageFactory {
 		}
 	}
 	
+	public void airlineSelect(int airline) {
+		new Select (airlineSelect).selectByIndex(airline);
+	}
+	
 	public void continueFurther() {
 		continueButton.click();
 		System.out.println("Proceeding further . . . .");
@@ -110,8 +117,8 @@ public class FlightFinderPageFactory {
 		return driver.getTitle();
 	}
 	
-	public void flighFinder(String tripType, String passCount, String departFrom, String fromMonth,
-			String fromDay, String departTo, String toMonth, String toDay, String serviceClass) {
+	public void flighFinder(String tripType, int passCount, String departFrom, String fromMonth,
+			String fromDay, String departTo, String toMonth, String toDay, String serviceClass, int airline) {
 		setTripType(tripType);
 		setPassCount(passCount);
 		departFromCity(departFrom);
@@ -121,6 +128,7 @@ public class FlightFinderPageFactory {
 		departToMonth(toMonth);
 		departToDate(toDay);
 		serviceClassSelect(serviceClass);
+		airlineSelect(airline);
 		continueFurther();
 		pageTitle();
 	}
