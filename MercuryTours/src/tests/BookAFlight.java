@@ -17,14 +17,18 @@ public class BookAFlight {
 	String webURL = "http://newtours.demoaut.com/";
 	String userName="mohit", password="mohit",browserType = "chrome", tripType="round trip",  
 		departFrom="New York",fromMonth="3",fromDay="19",departTo="Paris",toMonth="3",toDay="25",serviceClass="business",
-		passFirstName0 = "Mohit", passLastName0="Kumar",mealType="HNML",cardType="BA",creditCardNum="4444555566667777";
-	int passCount=0, airline=2,expMonth=4,expYear=2000;
+		cardType="BA",creditCardNum="4444555566667777";
+		String[] passFirstName = {"Mohit", "Ravi"}; 
+		String[] passLastName = {"Kumar", "John"};
+		String[] mealType= {"HNML","LCML"};
+		
+	int passCount=1, airline=2,expMonth=4,expYear=2000;
 	
 	@Test
 	public void bookAFlightTest() {
 		System.out.println("Executing the test");
 		BookAFlightPageFactory bookFlight = new BookAFlightPageFactory(driver);
-		bookFlight.bookAFlight(passFirstName0, passLastName0, mealType, cardType, creditCardNum, expMonth, expYear);
+		bookFlight.bookAFlight(passCount,passFirstName, passLastName, mealType, cardType, creditCardNum, expMonth, expYear);
 		Assert.assertTrue(bookFlight.confirmationMessage().contains("Your"));
 		System.out.println(bookFlight.confirmationMessage());
 	}

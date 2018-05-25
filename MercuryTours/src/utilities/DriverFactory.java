@@ -18,7 +18,7 @@ public class DriverFactory {
 		}
 		
 		else if (browserType.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.firefox.driver", "C:\\Soft\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Soft\\geckodriver.exe");
 			return new FirefoxDriver();
 		}
 		
