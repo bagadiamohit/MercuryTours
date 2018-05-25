@@ -70,6 +70,7 @@ public class MercuryBookAFlight {
 		Reporter.log("Browser is opened and website is launched");
 	}
 
+	// sdsdsd
 	@AfterClass
 	public void tearDown() {
 		System.out.println("Closing the test");
