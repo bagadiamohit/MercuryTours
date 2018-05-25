@@ -7,7 +7,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import pages.BookAFlightPageFactory;
 import pages.FlightFinderPageFactory;
 import pages.LoginPageFactory;
@@ -41,21 +40,29 @@ public class MercuryBookAFlightDDT {
 		passFirstName1 = passFirstName.split(",");
 		passLastName1 = passLastName.split(",");
 		mealType1 = mealType.split(",");
+		
+		//Login Functionality
 		System.out.println("Logging into the application");
 		LoginPageFactory loginPage = new LoginPageFactory(driver);
 		loginPage.login(userName, password);
 		Assert.assertTrue(loginPage.confirmation().contains("Flight"));
 		System.out.println("The confirmation message is: "+loginPage.confirmation());
 		Reporter.log("Browser is opened and website is launched");
+		
+		//Flight Finder
 		System.out.println("Finding the flight");
 		FlightFinderPageFactory flightFinder = new FlightFinderPageFactory(driver);
 		flightFinder.flighFinder(tripType, passCount1, departFrom, fromMonth, fromDay, departTo, toMonth, toDay, serviceClass, airline1);
 		Assert.assertTrue(flightFinder.pageTitle().contains("Select a Flight"));
 		System.out.println("The title of the page is: "+flightFinder.pageTitle());
+		
+		//Flight Selection
 		System.out.println("Selecting the flight");
 		SelectFlightPageFactory selectFlight = new SelectFlightPageFactory(driver);
 		selectFlight.selectFlight();
 		Assert.assertTrue(selectFlight.confirmation().contains("Book a Flight"));
+		
+		//Booking a flight
 		System.out.println("Booking the flight");
 		BookAFlightPageFactory bookFlight = new BookAFlightPageFactory(driver);
 		bookFlight.bookAFlight(passCount1, passFirstName1, passLastName1, mealType1, cardType, creditCardNum, expMonth1, expYear1);
@@ -72,6 +79,7 @@ public class MercuryBookAFlightDDT {
 	@BeforeMethod
 	public void setUp() {
 		System.out.println("Initializing the Test");
+		//Initializing the web driver
 		driver = utilities.DriverFactory.open(browserType);
 		driver.get(webURL);
 		Reporter.log("Browser is opened and website is launched");

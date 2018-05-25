@@ -6,7 +6,7 @@
       <class name="tests.MercuryBookAFlightDDT">
         <methods>
           <include name="tearDown"/>
-          <include name="bookAFlightDDT" invocation-numbers="1"/>
+          <include name="bookAFlightDDT" invocation-numbers="0 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.MercuryBookAFlightDDT -->

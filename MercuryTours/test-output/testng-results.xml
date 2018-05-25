@@ -14,19 +14,19 @@
       <![CDATA[Browser is opened and website is launched]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69875" started-at="2018-03-05T10:56:19Z" finished-at="2018-03-05T10:57:29Z">
+  <suite name="Default suite" duration-ms="58183" started-at="2018-03-06T09:48:58Z" finished-at="2018-03-06T09:49:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69875" started-at="2018-03-05T10:56:19Z" finished-at="2018-03-05T10:57:29Z">
+    <test name="Default test" duration-ms="58183" started-at="2018-03-06T09:48:58Z" finished-at="2018-03-06T09:49:56Z">
       <class name="tests.MercuryBookAFlightDDT">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="setUp" is-config="true" duration-ms="12704" started-at="2018-03-05T16:26:20Z" finished-at="2018-03-05T16:26:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="setUp" is-config="true" duration-ms="11306" started-at="2018-03-06T15:18:58Z" finished-at="2018-03-06T15:19:10Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is opened and website is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookAFlightDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="bookAFlightDDT" duration-ms="23077" started-at="2018-03-05T16:26:33Z" data-provider="getData" finished-at="2018-03-05T16:26:56Z">
+        <test-method status="PASS" signature="bookAFlightDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="bookAFlightDDT" duration-ms="18731" started-at="2018-03-06T15:19:10Z" data-provider="getData" finished-at="2018-03-06T15:19:29Z">
           <params>
             <param index="0">
               <value>
@@ -130,18 +130,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- bookAFlightDDT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="tearDown" is-config="true" duration-ms="1226" started-at="2018-03-05T16:26:56Z" finished-at="2018-03-05T16:26:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="tearDown" is-config="true" duration-ms="1110" started-at="2018-03-06T15:19:29Z" finished-at="2018-03-06T15:19:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="setUp" is-config="true" duration-ms="11621" started-at="2018-03-05T16:26:57Z" finished-at="2018-03-05T16:27:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="setUp" is-config="true" duration-ms="7262" started-at="2018-03-06T15:19:30Z" finished-at="2018-03-06T15:19:37Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is opened and website is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookAFlightDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="bookAFlightDDT" duration-ms="19562" started-at="2018-03-05T16:27:09Z" data-provider="getData" finished-at="2018-03-05T16:27:28Z">
+        <test-method status="PASS" signature="bookAFlightDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="bookAFlightDDT" duration-ms="18306" started-at="2018-03-06T15:19:37Z" data-provider="getData" finished-at="2018-03-06T15:19:55Z">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- bookAFlightDDT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="tearDown" is-config="true" duration-ms="1160" started-at="2018-03-05T16:27:28Z" finished-at="2018-03-05T16:27:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="tearDown" is-config="true" duration-ms="1046" started-at="2018-03-06T15:19:55Z" finished-at="2018-03-06T15:19:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
