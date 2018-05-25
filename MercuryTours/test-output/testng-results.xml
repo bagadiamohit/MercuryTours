@@ -8,38 +8,38 @@
       <![CDATA[Browser is opened and website is launched]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="104420" started-at="2018-05-25T10:21:23Z" finished-at="2018-05-25T10:23:07Z">
+  <suite name="Suite" duration-ms="29912" started-at="2018-05-25T13:27:52Z" finished-at="2018-05-25T13:28:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="104420" started-at="2018-05-25T10:21:23Z" finished-at="2018-05-25T10:23:07Z">
+    <test name="Test" duration-ms="29912" started-at="2018-05-25T13:27:52Z" finished-at="2018-05-25T13:28:22Z">
       <class name="tests.MercuryBookAFlight">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlight@17dd107]" name="setUp" is-config="true" duration-ms="38509" started-at="2018-05-25T15:51:23Z" finished-at="2018-05-25T15:52:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlight@12d3247]" name="setUp" is-config="true" duration-ms="12260" started-at="2018-05-25T18:57:52Z" finished-at="2018-05-25T18:58:04Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is opened and website is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:tests.MercuryBookAFlight@17dd107]" name="login" duration-ms="5375" started-at="2018-05-25T15:52:01Z" finished-at="2018-05-25T15:52:07Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.MercuryBookAFlight@12d3247]" name="login" duration-ms="5043" started-at="2018-05-25T18:58:04Z" finished-at="2018-05-25T18:58:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="flightFinder()[pri:1, instance:tests.MercuryBookAFlight@17dd107]" name="flightFinder" duration-ms="4026" started-at="2018-05-25T15:52:07Z" finished-at="2018-05-25T15:52:11Z">
+        <test-method status="PASS" signature="flightFinder()[pri:1, instance:tests.MercuryBookAFlight@12d3247]" name="flightFinder" duration-ms="4559" started-at="2018-05-25T18:58:09Z" finished-at="2018-05-25T18:58:14Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is opened and website is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- flightFinder -->
-        <test-method status="PASS" signature="selectFlight()[pri:2, instance:tests.MercuryBookAFlight@17dd107]" name="selectFlight" duration-ms="2055" started-at="2018-05-25T15:52:11Z" finished-at="2018-05-25T15:52:13Z">
+        <test-method status="PASS" signature="selectFlight()[pri:2, instance:tests.MercuryBookAFlight@12d3247]" name="selectFlight" duration-ms="2287" started-at="2018-05-25T18:58:14Z" finished-at="2018-05-25T18:58:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFlight -->
-        <test-method status="PASS" signature="bookFlight()[pri:3, instance:tests.MercuryBookAFlight@17dd107]" name="bookFlight" duration-ms="54033" started-at="2018-05-25T15:52:13Z" finished-at="2018-05-25T15:53:07Z">
+        <test-method status="PASS" signature="bookFlight()[pri:3, instance:tests.MercuryBookAFlight@12d3247]" name="bookFlight" duration-ms="5206" started-at="2018-05-25T18:58:16Z" finished-at="2018-05-25T18:58:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookFlight -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlight@17dd107]" name="tearDown" is-config="true" duration-ms="383" started-at="2018-05-25T15:53:07Z" finished-at="2018-05-25T15:53:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlight@12d3247]" name="tearDown" is-config="true" duration-ms="495" started-at="2018-05-25T18:58:22Z" finished-at="2018-05-25T18:58:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

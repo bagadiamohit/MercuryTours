@@ -1,4 +1,4 @@
-package tests;
+package test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -6,31 +6,23 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pages.BookAFlightPageFactory;
 import pages.FlightFinderPageFactory;
 import pages.LoginPageFactory;
 import pages.SelectFlightPageFactory;
 
-public class BookAFlight {
-	
+public class SelectFlight {
 	WebDriver driver;
 	String webURL = "http://newtours.demoaut.com/";
 	String userName="mohit", password="mohit",browserType = "chrome", tripType="round trip",  
-		departFrom="New York",fromMonth="3",fromDay="19",departTo="Paris",toMonth="3",toDay="25",serviceClass="business",
-		cardType="BA",creditCardNum="4444555566667777";
-		String[] passFirstName = {"Mohit", "Ravi"}; 
-		String[] passLastName = {"Kumar", "John"};
-		String[] mealType= {"HNML","LCML"};
-		
-	int passCount=1, airline=2,expMonth=4,expYear=2000;
+		departFrom="New York",fromMonth="3",fromDay="19",departTo="Paris",toMonth="3",toDay="25",serviceClass="business";
+	int passCount=2, airline=2;
 	
 	@Test
-	public void bookAFlightTest() {
+	public void selectFlightTest() {
 		System.out.println("Executing the test");
-		BookAFlightPageFactory bookFlight = new BookAFlightPageFactory(driver);
-		bookFlight.bookAFlight(passCount,passFirstName, passLastName, mealType, cardType, creditCardNum, expMonth, expYear);
-		Assert.assertTrue(bookFlight.confirmationMessage().contains("Your"));
-		System.out.println(bookFlight.confirmationMessage());
+		SelectFlightPageFactory selectFlight = new SelectFlightPageFactory(driver);
+		selectFlight.selectFlight();
+		Assert.assertTrue(selectFlight.confirmation().contains("Book a Flight"));
 	}
 	
 	@BeforeMethod
@@ -46,9 +38,6 @@ public class BookAFlight {
 		flightFinder.flighFinder(tripType, passCount, departFrom, fromMonth, fromDay, departTo, toMonth, toDay, serviceClass, airline);
 		Assert.assertTrue(flightFinder.pageTitle().contains("Select a Flight"));
 		System.out.println("The title of the page is: "+flightFinder.pageTitle());
-		SelectFlightPageFactory selectFlight = new SelectFlightPageFactory(driver);
-		selectFlight.selectFlight();
-		Assert.assertTrue(selectFlight.confirmation().contains("Book a Flight"));
 	}
 	
 	@AfterMethod
@@ -56,5 +45,4 @@ public class BookAFlight {
 		System.out.println("Closing the test");
 		driver.quit();
 	}
-
 }
