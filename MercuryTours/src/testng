@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="NewTest"/>
+      <class name="tests.MercuryBookAFlight"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

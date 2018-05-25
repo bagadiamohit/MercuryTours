@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Browser is opened and website is launched]]>
@@ -7,249 +7,43 @@
     <line>
       <![CDATA[Browser is opened and website is launched]]>
     </line>
-    <line>
-      <![CDATA[Browser is opened and website is launched]]>
-    </line>
-    <line>
-      <![CDATA[Browser is opened and website is launched]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58183" started-at="2018-03-06T09:48:58Z" finished-at="2018-03-06T09:49:56Z">
+  <suite name="Suite" duration-ms="104420" started-at="2018-05-25T10:21:23Z" finished-at="2018-05-25T10:23:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58183" started-at="2018-03-06T09:48:58Z" finished-at="2018-03-06T09:49:56Z">
-      <class name="tests.MercuryBookAFlightDDT">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="setUp" is-config="true" duration-ms="11306" started-at="2018-03-06T15:18:58Z" finished-at="2018-03-06T15:19:10Z">
+    <test name="Test" duration-ms="104420" started-at="2018-05-25T10:21:23Z" finished-at="2018-05-25T10:23:07Z">
+      <class name="tests.MercuryBookAFlight">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlight@17dd107]" name="setUp" is-config="true" duration-ms="38509" started-at="2018-05-25T15:51:23Z" finished-at="2018-05-25T15:52:01Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is opened and website is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookAFlightDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="bookAFlightDDT" duration-ms="18731" started-at="2018-03-06T15:19:10Z" data-provider="getData" finished-at="2018-03-06T15:19:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mohit]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mohit]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[round trip]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[New York]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[19]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Paris]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[business]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[BA]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[7777272737473838]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Mohit,Ravi]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Kumar, Kumar]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[HNML,LCML]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[2000]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.MercuryBookAFlight@17dd107]" name="login" duration-ms="5375" started-at="2018-05-25T15:52:01Z" finished-at="2018-05-25T15:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="flightFinder()[pri:1, instance:tests.MercuryBookAFlight@17dd107]" name="flightFinder" duration-ms="4026" started-at="2018-05-25T15:52:07Z" finished-at="2018-05-25T15:52:11Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is opened and website is launched]]>
             </line>
           </reporter-output>
-        </test-method> <!-- bookAFlightDDT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="tearDown" is-config="true" duration-ms="1110" started-at="2018-03-06T15:19:29Z" finished-at="2018-03-06T15:19:30Z">
+        </test-method> <!-- flightFinder -->
+        <test-method status="PASS" signature="selectFlight()[pri:2, instance:tests.MercuryBookAFlight@17dd107]" name="selectFlight" duration-ms="2055" started-at="2018-05-25T15:52:11Z" finished-at="2018-05-25T15:52:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFlight -->
+        <test-method status="PASS" signature="bookFlight()[pri:3, instance:tests.MercuryBookAFlight@17dd107]" name="bookFlight" duration-ms="54033" started-at="2018-05-25T15:52:13Z" finished-at="2018-05-25T15:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlight@17dd107]" name="tearDown" is-config="true" duration-ms="383" started-at="2018-05-25T15:53:07Z" finished-at="2018-05-25T15:53:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="setUp" is-config="true" duration-ms="7262" started-at="2018-03-06T15:19:30Z" finished-at="2018-03-06T15:19:37Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is opened and website is launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookAFlightDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="bookAFlightDDT" duration-ms="18306" started-at="2018-03-06T15:19:37Z" data-provider="getData" finished-at="2018-03-06T15:19:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mohit]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mohit]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[round trip]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[New York]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[19]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Paris]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[business]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[BA]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[7777272737473838]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Mohit,Ravi]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Kumar, Kumar]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[HNML,LCML]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[2000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is opened and website is launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bookAFlightDDT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MercuryBookAFlightDDT@18c1321]" name="tearDown" is-config="true" duration-ms="1046" started-at="2018-03-06T15:19:55Z" finished-at="2018-03-06T15:19:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.MercuryBookAFlightDDT -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.MercuryBookAFlight -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
